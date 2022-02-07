@@ -44,6 +44,19 @@
         align-items: center;
         justify-content: center;
     }
+
+    .section-title{
+        font-size: 4rem;
+        font-weight: 300;
+        color: black;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        text-align: center;
+    }
+    .section-title span{
+        color:crimson;
+    }
     /* hero section */
     #hero{
         background-image: url(img/images.jpg);
@@ -179,18 +192,9 @@
         
     }
 
-    #services .section-title{
-        font-size: 4rem;
-        font-weight: 300;
-        color: black;
-        margin-bottom: 10px;
-        text-transform: uppercase;
-        letter-spacing: 0.2rem;
-        text-align: center;
+   
 
-    }
-
-    #services .section-title span{
+    .section-title span{
         color:crimson;
     }
 
@@ -266,6 +270,39 @@
     
     /* end services cards */
     /* end services section */
+
+    /* project sctions */
+    #projects .projects{
+        flex-direction: column;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+    #projects .projects-header h1{
+        margin-bottom: 50px;
+    } 
+    #peojects .all-projects{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #projects  p{
+        color: rgb(10, 10, 10);
+        text-align: left;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+    }
+    #projects .project-item{
+        /* display: flex; */
+        align-items: center;
+        justify-content:center;
+        width: 80%;
+        margin: 20px auto;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    /* end project sections */
 </style>
 <body>
     
@@ -325,6 +362,65 @@
             </div>
         </section>
     <!-- end services section -->
+
+    <!-- start project section -->
+    <section id="projects">
+        <div class="projects container">
+            <div class="projects-header">
+                <h1 class="section-title">
+                    Recent <span>Projects</span>
+                </h1>
+            </div>
+            
+            <div class="all-projects">
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 1</h1>
+                        <h2>coding is love</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem ducimus sit aperiam maiores voluptates. Non, voluptatum dolorem! Ipsam voluptates, officia animi iure provident libero, nesciunt, possimus modi neque facilis placeat vero magni.</p>
+                    </div>
+                     
+                     <div class="project-image">
+                         <img src="./img/image2.jpg" alt="img2">
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 2</h1>
+                        <h2>I m the king of this world</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem ducimus sit aperiam maiores voluptates. Non, voluptatum dolorem! Ipsam voluptates, officia animi iure provident libero, nesciunt, possimus modi neque facilis placeat vero magni.</p>
+                    </div>
+                     
+                     <div class="project-image">
+                         <img src="./img/image2.jpg" alt="img2">
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 3</h1>
+                        <h2>You can not beat me</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem ducimus sit aperiam maiores voluptates. Non, voluptatum dolorem! Ipsam voluptates, officia animi iure provident libero, nesciunt, possimus modi neque facilis placeat vero magni.</p>
+                    </div>
+                     
+                     <div class="project-image">
+                         <img src="./img/image2.jpg" alt="img2">
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 4</h1>
+                        <h2>i love you</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem ducimus sit aperiam maiores voluptates. Non, voluptatum dolorem! Ipsam voluptates, officia animi iure provident libero, nesciunt, possimus modi neque facilis placeat vero magni.</p>
+                    </div>
+                     
+                     <div class="project-image">
+                         <img src="./img/image2.jpg" alt="img2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end project section -->
 </body>
 </html>
 
